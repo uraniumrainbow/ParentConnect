@@ -1,13 +1,34 @@
 const { Schema, model } = require('mongoose');
 
-const techSchema = new Schema({
-  name: {
+const postSchema = new Schema({
+  userName: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+    },
+  ],
+  title: {
     type: String,
     required: true,
+    trim: true,
+  },
+  image: {
+    type: String,
+    required: true, 
     unique: true,
   },
+  caption: {
+    type: String,
+    required: true,
+  },
+  comments: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Comment',
+    },
+  ],
 });
 
-const Tech = model('Tech', techSchema);
+const Posts = model('Posts', postSchema);
 
-module.exports = Tech;
+module.exports = Posts;
