@@ -8,10 +8,13 @@ const Navbar = () => {
         <nav className="navbar">
             <img src={logo} alt="logo" className='logo' />
             <div className="desktopMenu">
-               <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem">Home</Link>
-               <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem">Post!</Link>
-               <Link activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem">Notifications</Link>
-               <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem">Logout</Link>
+               <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem">Play</Link>
+               <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem">How To</Link>
+               <Link activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem">Get Out</Link>
+
+            </div>
+            <div class="sioflex">
+            <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={450} className="desktopMenuListItem signin-out">Sign In/Out</Link>
             </div>
             <button className='desktopMenuBtn'>
                 
