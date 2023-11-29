@@ -11,7 +11,7 @@ const post = () => {
                 <div className="postCaption">Lorem Ipsum dolor et veritas en nolor egyptum ne rare</div>
         </div>
         <div className="postBox">
-            <span className="postTitle">Beach Day</span>
+          q
                 <img src={BeachPic} alt="beach" className="postImg" />
                 <div className="postCaption">Lorem Ipsum dolor et veritas en nolor egyptum ne rare</div>
         </div>
