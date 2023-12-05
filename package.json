@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "cd client && CI=false npm run uild",
+        "build": "cd client && CI=false npm run build",
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
         "start": "node server/server.js",
