@@ -17,7 +17,7 @@ const CONNECTION_URL = 'mongodb+srv://uraniumrainbow:Bowtie16@cluster0.ua1bc6p.m
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => app.listen(PORT, () => console.log(`server running on port: ${PORT}`)))
+    .then(() => app.listen(PORT, "0.0.0.0", () => console.log(`server running on port: ${PORT}`)))
     .catch((error) => console.log(error.message));
 
 mongoose.connect(CONNECTION_URL, { 'useFindAndModify': false })
