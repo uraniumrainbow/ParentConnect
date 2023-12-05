@@ -6,7 +6,7 @@
     "scripts": {
         "build": "cd client && CI=false npm run build",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "cd server && npm start",
+        "dev": "cd client && npm start",
         "start": "node server/server.js",
         "developer": "concurrently \"cd server && npm start\" \"cd client && npm start\"",        "install": "cd server && npm i --legacy-peer-deps && cd ../client && npm i --legacy-peer-deps",
         "seed": "node server/config/seeds.js"
