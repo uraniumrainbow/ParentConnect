@@ -16,6 +16,9 @@
         "type": "git",
         "url": ""
     },
+    "devServer": {
+        "allowedHosts": "all"
+      },
     "keywords": [],
     "author": "",
     "license": "ISC",
