@@ -1,20 +1,39 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "mongoose": "^8.0.1",
-    "nodemon": "^3.0.1"
-  }
+    "name": "ParentConnect",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "cd client && npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+        "start": "node server/server.js",
+        "develop": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+        "install": "cd server && npm i --legacy-peer-deps && cd ../client && npm i --legacy-peer-deps",
+        "seed": "node server/config/seeds.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/EsotericZ/coRBallRank/issues"
+    },
+    "homepage": "https://github.com/EsotericZ/coRBallRank#readme",
+    "devDependencies": {
+        "concurrently": "^7.0.0"
+    },
+    "dependencies": {
+        "semantic-ui-css": "^2.4.1",
+        "semantic-ui-react": "^2.1.2",
+        "concurrently": "^7.0.0"
+    }
 }
+
+
+
+
+
